@@ -42,3 +42,19 @@ main>button{
 body>footer{
     order: 1;
 }
+
+@media (min-width: 600px){
+    body{
+        display: grid;
+        grid-template-areas: "header header"
+                            "scarecrow main"
+                            ". footer";
+        grid-row-gap: 20%;
+    }
+    header{
+        grid-area: header;
+    }
+    .scarecrow{
+        grid-area: scarecrow;
+    }
+}
