@@ -1,0 +1,44 @@
+body{
+    font-family: "Poppins", monospace;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    text-transform: uppercase;
+    font-weight: bold;
+    size: 24px;
+    line-height: 25px;
+    letter-spacing: -1px;
+    word-spacing: 5px;
+    align-self: flex-start;
+}
+.scarecrow{
+    background: url('Scarecrow.png') no-repeat;
+    min-height: 300px;
+    height: 400%;
+    background-size: contain;
+    width: 100%;
+    background-position: center;
+}
+main>h1{
+    font-size: 45px;
+}
+main{
+    text-align: justify;
+}
+main>button{
+    height: 68px;
+    text-transform: uppercase;
+    font-family: inherit;
+    background-color: #333;
+    outline: none;
+    color: #fff;
+    padding: 20px;
+    border: 0;
+    margin: 40px 0;
+}
+body>footer{
+    order: 1;
+}
