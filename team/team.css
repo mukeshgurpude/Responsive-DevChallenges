@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 30px 10vw;
-    gap: 3em;
+    gap: 4em;
 }
 .details{font-size: .9em;}
 .details > h2 {
@@ -58,14 +58,20 @@ footer {
 
 @media (max-width: 750px) {
     main#team {
-        grid-template-columns: 10em 10em;
-        grid-template-rows: repeat(3, 25em);
+        grid-template-columns: 7em 7em;
+        grid-template-rows: repeat(3, 20em);
+        grid-gap: 3em;
+        justify-content: center;
     }
     main > section {
         align-self: flex-start;
     }
     main > section:nth-child(2n) {
         align-self: flex-end;
+    }
+    .role{
+        left: 5.5em;
+        top: 6em;
     }
     #info {
         flex-direction: column;
@@ -81,4 +87,15 @@ footer {
     #info > * {
         max-width: 60%;
     }
+}
+@media(max-width: 300px){
+    main#team{
+        grid-template-columns: 8em;
+        grid-template-rows: repeat(4, 15em);
+        grid-gap: 2em 0;
+        justify-content: space-around;
+    }
+    .role{left: 6em;}
+    .name{font-size: .8em;}
+    footer{font-size: 12px;}
 }
