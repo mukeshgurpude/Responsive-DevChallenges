@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Poppins, "Segoe UI", verdana;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10vw;
+    gap: 3em;
+}
+.details{font-size: .9em;}
+.details > h2 {
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 10em);
+    grid-template-rows: repeat(2, 25em);
+    grid-gap: 3em 5em;
+    justify-content: center;
+}
+img.profile-image {
+    width: 100%;
+}
+
+main > section {
+    position: relative;
+}
+.role {
+    position: relative;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    font-size: 12px;
+    top: 8em;
+    right: -8em;
+}
+.name {
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+footer {
+    color: #a9a9a9;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (max-width: 750px) {
+    main#team {
+        grid-template-columns: 10em 10em;
+        grid-template-rows: repeat(3, 25em);
+    }
+    main > section {
+        align-self: flex-start;
+    }
+    main > section:nth-child(2n) {
+        align-self: flex-end;
+    }
+    #info {
+        flex-direction: column;
+        padding: 30px 10px;
+        align-items: flex-start;
+        gap: 0;
+    }
+}
+@media (min-width: 752px) {
+    main > section:nth-child(3n + 2) {
+        align-self: flex-end;
+    }
+    #info > * {
+        max-width: 60%;
+    }
+}

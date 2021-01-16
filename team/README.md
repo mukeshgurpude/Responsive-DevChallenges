@@ -31,9 +31,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
-
-- Demo @[Github Pages](https://mukeshgurpude.github.io/responsive-devchallenges/team-page/)
+- View @[Github Pages](https://mukeshgurpude.github.io/responsive-devchallenges/team-page/)
 
 ## Features
 
@@ -44,3 +42,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 - GitHub [@mukeshgurpude](https://github.com/mukeshgurpude)
 - Twitter [@mukeshgurpude](https://twitter.com/mukeshgurpude)
+- LinkedIn [mukeshgurpude](https://linkedin.com/in/mukeshgurpude)
