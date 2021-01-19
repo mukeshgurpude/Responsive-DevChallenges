@@ -173,6 +173,7 @@ body > header {
     display: inline-flex;
     flex-direction: column;
 }
+.card-role{font-size: .9em;}
 
 footer{
     border-top: 2px solid #fff;
