@@ -69,6 +69,7 @@ img.cake {
 }
 .ingredients label {
   font-size: .9em;
+  padding: .5em;
   margin: 1em 0 1em 1.5em;
 }
 .ingredients input{
@@ -78,7 +79,7 @@ img.cake {
 }
 .ingredients input:checked~span{font-size: .8em;}
 .instructions{counter-reset: steps}
-.step{margin: .5em .5em 2em 4em;position: relative;}
+.step{margin: .5em .5em 1em 4em;position: relative;}
 .step::before{
 	counter-increment: steps;
 	content: counter(steps);
@@ -93,16 +94,23 @@ img.cake {
 	border-radius: 5px;
 }
 .source{
+	font-family: cursive;
 	color: rgba(0, 0, 0, 0.6);
 	font-weight: bold;
 	font-size: .9em;
-	margin: 1em 0 2em 1em;
+	margin: 0 0 2em 1em;
+	overflow-x: auto;
+	text-align: center;
+	text-decoration: underline;
 }
-.source a{color: inherit; text-decoration: none;}
+.source a{color: inherit;}
 
 footer{
 	text-align: center;
+	margin: 0 auto;
 	font-size: .8em;
+	margin-top: 1em;
+	padding: .5em;
 	color: rgba(125, 125, 125);
 }
 
@@ -154,28 +162,17 @@ footer{
 }
 @media screen and (min-width: 800px){
 	img.cake{
-		width: 45%;
-		float: right;
-		position: relative;
-		top: 1em;
+		width: 50%;
 	}
 	.dots{top:1em !important;transform: scale(1.5);}
-	.details{width: 45%;float: left;}
-	.prepare{clear: both;}
-
-	/*Experimanets ahead */
-	.instructions{
+	.details{width: 90%;}
+	body>.contxt{
 		display: flex;
-		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
 	}
-	.instructions>h2, p{width: 100%;}
-	.instructions>.step{
-		min-width: 400px;
-		max-height: 400px;
-		flex: 1 0 33%;
-		padding: 1em;
-		text-align: justify;
-	}
+
+	.step{padding: 1em;}
 	.step:hover{
 		box-shadow: 0 0 1em 0 rgba(125, 125, 125, 0.3);
 		border-radius: 5px;
