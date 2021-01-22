@@ -20,7 +20,6 @@ header {
   align-items: center;
   justify-content: center;
   margin: 2em auto;
-  gap: .5em;
 }
 .profile{width: var(--profile-width);border-radius: 1em;}
 h1{font-size: 1.5em;margin: 0;}
@@ -29,23 +28,26 @@ address{font-style: normal;font-size: .9em;color: rgba(0, 0, 0, .8);}
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  gap: 1em;
+}
+@supports (gap: 1em) {
+  header{gap: .5em}
+  .social{gap: 1em;}
 }
 .social__box {
   display: inline-flex;
   flex-direction: column;
   background-color: rgba(200, 200, 200, 1);
   text-align: center;
-  padding: 0.5em 1em;
+  padding: 0.2em 1em;
   border-radius: 5px;
 }
-.label{color: rgba(0, 0, 0, .6);}
+.label{color: rgba(0, 0, 0, .6);font-size: .8em}
 
 main.gallery{
     display: grid;
     width: 100%;
     padding: var(--gallery-padding);
-    grid-template-areas: 
+    grid-template-areas:
     "photo1 photo2 photo2"
     "photo3 photo3 photo4"
     "photo6  photo5 photo4";
@@ -70,14 +72,22 @@ footer{
     color: rgba(100, 100, 100, 0.9);
     border-top: 2px solid black;
 }
-
-@media screen and (max-width: 768px){
-    :root{--gallery-padding: 0 2em}
+@media screen and (min-width: 968px){
+  :root{--gallery-padding: 0 12em}
 }
-
+@media screen and (max-width: 968px){
+    :root{--gallery-padding: 0 6em}
+}
+@media screen and (max-width: 768px){
+    :root{--gallery-padding: 0 5em}
+}
 @media screen and (max-width: 552px){
-    :root{--gallery-padding: 0 1em;--profile-width: 6em;}
+    :root{--gallery-padding: 0 3em;--profile-width: 8em;}
 }
 @media screen and (max-width: 442px){
-    :root{--gallery-padding: 0 .5em;--profile-width: 3em;}
+    :root{--gallery-padding: 0 .5em;--profile-width: 6em;}
+}
+@media screen and (max-width: 300px){
+    header{font-size: .6em;}
+    h1{font-size: 1em}
 }
