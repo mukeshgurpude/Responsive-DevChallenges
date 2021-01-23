@@ -1,0 +1,73 @@
+*, *::after, *::before{box-sizing: border-box;}
+body{margin: 0;font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+:root{
+    --product-card-height: 10em;
+}
+main{
+    display: flex;
+    flex-flow: nowrap column;
+}
+#cart{
+    background-color: rgb(242, 242, 242);
+    padding: 1em;
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+}
+#products{
+    display: flex;
+    flex-flow: nowrap column;
+}
+.product{
+    display: flex;
+    column-gap: 2em;
+}
+.product h3{margin: 0;}
+.product__image{width: var(--product-card-height);}
+.product__image>img{width: 100%;}
+.detail{display: flex;flex-flow: nowrap column;align-items: center;height: var(--product-card-height);justify-content: space-around;}
+.detail>p{display: flex;justify-content: center;gap: .5em;}
+.new__price{color: rgba(246, 151, 81);text-decoration: none;}
+.old__price{font-size: .8em;}
+.count__container{
+    width: 80%;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    padding: .2em 1em;
+    align-items: center;
+    border-radius: 1em;
+}
+.count__changer{
+    background-color: rgba(125, 125, 125, .2);
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+.aggregate{width: 60%;}
+.aggregate>p{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(50, 50, 255);
+    padding-top: .5em;
+}
+form#info{padding: 0 1em;}
+.input{
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-around;
+    border-radius: .5em;
+    height: 3em;
+    align-items: center;
+    line-height: 2em;
+    margin-bottom: 1em;
+}
+.input>.material-icons{width: 2em;text-align: center;}
+.input>input,.input>select{width: calc(100% - 3em);height: 100%;border: none;outline: none;}
+.input__box__flex{display: flex;width: 100%;gap: 1em;}
+.input__box__half{flex: 1;}
+input[type=submit]{background-color: rgb(242 153 74);height: 3em;width: calc(50% - 1em);border-radius: 1em;border: none;color: #fff;font-size: 1em;font-weight: bold;float: right;}
+
+footer{font-size: .8em;color: rgba(125, 125, 125);text-align: center;margin: 2em auto 0 auto; padding: 1em;}

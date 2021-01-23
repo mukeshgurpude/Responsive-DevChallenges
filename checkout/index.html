@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="icon" href="../devchallenges.png">
+		<title>Checkout</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
+		<link rel="stylesheet" href="checkout.css">
+	</head>
+	<body>
+		<h1>Checkout</h1>
+		<main>
+			<aside id="cart">
+				<div id="products">
+					<div class="product">
+						<div class="product__image">
+							<img src="images/photo1.png">
+						</div>
+						<div class="detail">
+							<h3>Vintage Backbag</h3>
+							<p><ins class="new__price">$54.99</ins><del class="old__price">$94.99</del></p>
+							<div class="count__container">
+								<span class="count__changer">-</span>
+								<!-- <input type="number" value="1" min="1" class="count"> -->
+								<span class="count">1</span>
+								<span class="count__changer">+</span>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product__image">
+							<img src="images/photo2.png">
+						</div>
+						<div class="detail">
+							<h3>Levi Shoes</h3>
+							<p><ins class="new__price">$74.99</ins><del class="old__price">$124.99</del></p>
+							<div class="count__container">
+								<span class="count__changer">-</span>
+								<!-- <input type="number" value="1" min="1" class="count"> -->
+								<span class="count">1</span>
+								<span class="count__changer">+</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="aggregate">
+					<p><span>Shipping</span><span>$19</span></p>
+					<p><span>Total</span><span>$148.98</span></p>
+				</div>
+			</aside>
+			<form id="info" method="dialog" action="" onsubmit="alert('Form Submitted');">
+				<section id="contact">
+					<h2>Contact information</h2>
+					<div class="input__box">
+						<label for="contact__email">E-mail</label>
+						<div class="input">
+							<!--There will be a mail icon-->
+							<span class="material-icons">email</span>
+							<input type="email" placeholder="Enter your email..." id="contact__email" required>
+						</div>
+					</div>
+					<div class="input__box">
+						<label for="contact__phone">Phone</label>
+						<div class="input">
+							<!--There will be a phone icon-->
+							<span class="material-icons">local_phone</span>
+							<input type="tel" placeholder="Enter your phone..." id="contact__phone" required>
+							<!-- <input type="tel" pattern="^(0 | \+91)?[987]\d{9}$" placeholder="Enter your phone..." id="contact_phone" required> -->
+						</div>
+					</div>
+				</section>
+				<section id="shipping">
+					<h2>Shipping address</h2>
+					<div class="input__box">
+						<label for="shipping__name">Full Name</label>
+						<div class="input">
+							<!--There will be a user icon-->
+							<span class="material-icons">account_circle</span>
+							<input type="text" placeholder="Enter your full name..." id="shipping__name" required>
+						</div>
+					</div>
+					<div class="input__box">
+						<label for="shipping__address">Address</label>
+						<div class="input">
+							<!--There will be a home icon-->
+							<span class="material-icons">home</span>
+							<input type="text" placeholder="Your address..." id="shipping__address" required>
+						</div>
+					</div>
+					<div class="input__box">
+						<label for="shipping__city">City</label>
+						<div class="input">
+							<!--There will be a building icon-->
+							<span class="material-icons">location_city</span>
+							<input type="text" placeholder="Your city..." id="shipping__city" required>
+						</div>
+					</div>
+					<div class="input__box__flex">
+						<div class="input__box__half">
+							<label for="contact__country">Country</label>
+							<div class="input">
+								<!--There will be a globe icon-->
+								<span class="material-icons">public</span>
+								<select id="contact__country" required>
+									<option disabled selected hidden>Your country...</option>
+									<option>India</option>
+									<option>USA</option>
+									<option>Japan</option>
+								</select>
+							</div>
+						</div>
+						<div class="input__box__half">
+							<label for="contact__post">Postal code</label>
+							<div class="input">
+								<!--There will be a post icon-->
+								<span class="material-icons">markunread_mailbox</span>
+								<input type="number" placeholder="Your postal code..." id="contact__post" required>
+							</div>
+						</div>
+					</div>
+					<div class="input__box">
+						<label>
+							<input type="checkbox" required><span>Save this information for next time</span>
+						</label>
+					</div>
+				</section>
+				<input type="submit" value="Continue">
+			</form>
+		</main>
+		<footer>Mukesh Gurpude @ DevChallenges.io</footer>
+	</body>
+</html>
