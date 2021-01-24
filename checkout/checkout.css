@@ -76,7 +76,7 @@ h2{font-size: 1.2em;color: rgba(0, 0, 0, .8);margin: 1em 0 .5em;}
 .input__box__half{width: calc(50% - .5em);min-width: 100px;}
 input[type=submit]{background-color: rgb(242 153 74);height: 2.5em;width: calc(50% - 1em);border-radius: 1em;border: none;color: #fff;font-size: 1em;font-weight: bold;float: right;min-width: 100px;max-width: 150px;margin-top: .5em;}
 .input__box>label:only-child{font-size: .9em;text-align: left;}
-footer{font-size: .8em;color: rgba(125, 125, 125);text-align: center;margin: 2.5em auto 0 auto;}
+footer{font-size: .8em;color: rgba(125, 125, 125);text-align: center;margin: 2.5em auto 1em auto;}
 
 @media screen and (max-width: 319px){
     .product{flex-flow: nowrap column;}
@@ -86,7 +86,7 @@ footer{font-size: .8em;color: rgba(125, 125, 125);text-align: center;margin: 2.5
 @media screen and (min-width: 576px){
     :root{--page-padding: 1em;}
     main{flex-flow: nowrap row-reverse;justify-content: space-between;align-items: flex-start;}
-    #cart{width: 40%;}
+    #cart{width: 40%;margin-top: 3em;}
     form#info{width: 55%;}
     .detail{font-size: .8em;}
     .product__image{width: 6em;}
