@@ -10,3 +10,4 @@ Solutions for challenges at [DevChallenges](https://devchallenges.io/paths/respo
 |04|Recipe Blog|[Live Demo](https://mukeshgurpude.github.io/Responsive-DevChallenges/recipe-blog/)|[Recipe blog on DevChallenges](https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht)|
 |04|Image Gallery|[Live Demo](https://mukeshgurpude.github.io/Responsive-DevChallenges/gallery/)|[Gallery on DevChallenges](https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I)|
 |05|Checkout Page|[Live Demo](https://mukeshgurpude.github.io/Responsive-DevChallenges/checkout/)|[Checkout Page on DevChallenges](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO)|
+|06|Edie Homepage|[Live Demo](https://mukeshgurpude.github.io/Responsive-DevChallenges/edie/)|[Edie Homepage on DevChallenges](https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0)|
