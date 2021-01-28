@@ -10,16 +10,20 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
 </head>
 <body>
+	<!--
+		Prototype of this page
+		https://www.figma.com/proto/ahnGupP4JjTdVJDTRfMRF2/edie-homepage
+	-->
 	<header>
 		<span class="logo-name" style="align-self: center;">Edie</span>
 		<div id="menu-toggle"><div class="bar"></div></div>
 		<nav>
 			<ul class="nav-links">
-				<li><a href="#home">Home</a></li>
+				<li><a href="#">Home</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="#works">Our Works</a></li>
 				<li><a href="#clients">Clients</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#social">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -30,7 +34,7 @@
 	<div class="heroimage__wrapper"><img src="assets/images/heroImage.jpg" alt="Tasks discussion in meeting" class="heroimage"></div>
 	<section id="contact">
 		<h2>Story, emotion and purpose</h2>
-		<p>We help transform your ideas into real world applications that will outperform 
+		<p>We help transform your ideas into real world applications that will outperform
 		your toughest competition and help you achieve your strategic goals in short period of time.
 		</p>
 		<form class="contact__form" method="dialog" action="">
@@ -48,7 +52,7 @@
 			<section class="service">
 				<h3>UI/UX Design</h3>
 				<span class="service-icon material-icons" style="background-color: hsl(200, 70%, 50%)">create</span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					Duis a metus ac nulla consequat aliquet id quis turpis.
 				</p>
 				<button class="service-info">Get started</button>
@@ -56,7 +60,7 @@
 			<section class="service">
 				<h3>Front End</h3>
 				<span class="service-icon material-icons" style="background-color: hsl(150, 60%, 40%);">code</span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					Duis a metus ac nulla consequat aliquet id quis turpis.
 				</p>
 				<button class="service-info">Get started</button>
@@ -64,7 +68,7 @@
 			<section class="service">
 				<h3>Back End</h3>
 				<span class="service-icon material-icons" style="background-color: hsl(0, 80%, 60%);">storage</span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					Duis a metus ac nulla consequat aliquet id quis turpis.
 				</p>
 				<button class="service-info">Get started</button>
@@ -104,7 +108,7 @@
 				</div>
 			</section>
 		</div>
-		<a href="#">see more</a>
+		<a href="#">see more<span class="material-icons" style="transform: translateY(6px)">arrow_right_alt</a>
 	</section>
 
 	<section id="team">
@@ -123,7 +127,7 @@
 	<section id="clients">
 		<figure class="comment">
 			<blockquote>
-				“Fast and outstanding resutls. Edie understands their customer’s needs. 
+				“Fast and outstanding resutls. Edie understands their customer’s needs.
 				They have a young and talented team.”
 			</blockquote>
 			<figcaption>
@@ -136,32 +140,32 @@
 		</figure>
 	</section>
 
-	<footer>
+	<footer id="social">
 		<div class="row">
 			<ul class="footer__links">
-				<li><a href="#home">Home</a></li>
+				<li><a href="#">Home</a></li>
 				<li><a href="#services">Services</a></li>
-				<li><a href="#work">Our Works</a></li>
+				<li><a href="#works">Our Works</a></li>
 				<li><a href="#clients">Clients</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#social">Contact</a></li>
 			</ul>
 			<div class="footer__social">
-				<span class="contact_title"></span>
+				<span class="contact_title">Edie</span>
 				<ul class="wrapper">
 					<li><a href="#"><img src="assets/icons/instagram.svg" alt=""></a></li>
 					<li><a href="#"><img src="assets/icons/linkedin.svg" alt=""></a></li>
 					<li><a href="#"><img src="assets/icons/twitter.svg" alt=""></a></li>
 				</ul>
 			</div>
-			<form class="footer__contact">
+			<form class="footer__contact contact__form">
 				<label for="footer_contact">Want us to contact you?</label>
-				<div>
-					<input type="email" id="footer_contact">
+				<div class="contact__wrapper">
+					<input type="email" id="footer_contact" placeholder="Email" style="border: none">
 					<input type="submit" value="Join">
 				</div>
 			</form>
 		</div>
-		<div class="row">
+		<div class="row" style="align-self: center;margin-top: 2em;font-size: .8em;color: rgba(125, 125, 125, .8)">
 			Mukesh Gurpude @ DevChallenges.io
 		</div>
 	</footer>
