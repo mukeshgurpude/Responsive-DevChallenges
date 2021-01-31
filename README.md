@@ -1,6 +1,6 @@
 # Responsive Development Path - DevChallenges
 
-Below are the pages I developed for the submission to Responsive Development challenges listed on  [DevChallenges.io](https://devchallenges.io/paths/responsiveWebPaths)
+> Below are the pages I developed for the submission to Responsive Development challenges listed on  [DevChallenges.io](https://devchallenges.io/paths/responsiveWebPaths)
 
 |  | Demo | Challenge Link |
 |:---:|:---|---:|
@@ -11,4 +11,4 @@ Below are the pages I developed for the submission to Responsive Development cha
 | 05 | [Image Gallery](https://mukeshgurpude.github.io/Responsive-DevChallenges/gallery/) | [Gallery on DevChallenges](https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I) |
 | 06 | [Checkout Page](https://mukeshgurpude.github.io/Responsive-DevChallenges/checkout/) | [Checkout Page on DevChallenges](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) |
 | 07 | [Edie Homepage](https://mukeshgurpude.github.io/Responsive-DevChallenges/edie/) | [Edie Homepage on DevChallenges](https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0) |
-| 08 | [Portfolio](https://mukeshgurpude.github.io/Responsive-DevChallenges/portfolio/) | [Portfolio design on DevChallenges](https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt) |
+| 08 | [Portfolio](https://mukeshgurpude.github.io/Responsive-DevChallenges/portfolio/)(In Progress) | [Portfolio design on DevChallenges](https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt) |

@@ -6,43 +6,154 @@
         <link rel="icon" href="../devchallenges.png">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
         <title>Devchallenges</title>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet"> -->
         <link href="portfolio.css" rel="stylesheet">
 </head>
 <body>
+        <!-- <header><h1 id="main" style="color: #fff;font-family: Monteserrat;">MG</h1></header> -->
         <!-- Title About me-->
-        <section class="container"></section>
+        <section class="container">
+                <div id="about" class="d-flex">
+                        <div class="d-flex" id="basic">
+                                <div class="d-flex" style="margin-bottom: 1em;">
+                                        <h1 style="margin-bottom: 0;">Mukesh Gurpude</h1>
+                                        <span style="color: rgba(125, 125, 125, .8);font-size: .8em;">Lifelong Learner</span>
+                                </div>
+                                <a href="mailto:mukeshgurpude02@gmail.com">✉ mukeshgurpude02@gmail.com</a>
+                        </div>
+                        <div class="info">
+                                <p>A developer with no professional Experience😥.<br>
+                                I'm avid learner, and willing to learn and implement what I've learnt.</p>
+                        </div>
+                </div>
+        </section>
 
         <!-- Skills Container -->
-        <section class="container"></section>
+        <section class="container">
+                <h2>Skills</h2>
+                <p>I'm somewhat comfortable in using ⬇</p>
+                <div class="skillset d-flex">
+                        <img src="assets/icons/html5.svg" class="skill" alt="HTML5" title="HTML5">
+                        <img src="assets/icons/css3.svg" class="skill" alt="CSS3" title="CSS3">
+                        <img src="assets/icons/python.svg" class="skill" alt="Python3" title="Python">
+                        <img src="assets/icons/django.svg" class="skill" alt="Django" title="Django">
+                        <img src="assets/icons/js.svg" class="skill" alt="Javascript" title="Javascript">
+                </div>
+                <p>😖Currently struggling to learn ⬇</p>
+                <div class="skillset d-flex">
+                        <img src="assets/icons/react.svg" class="skill" alt="React.js" title="React">
+                        <img src="assets/icons/redux.svg" class="skill" alt="redux" title="Redux">
+                        <img src="assets/icons/mongodb.svg" class="skill" alt="Mongo" title="MongoDB">
+                </div>
+        </section>
 
         <!-- Experiences Container -->
         <section class="container">
+                <h2>Experiences</h2>
+                <div class="wrapper"></div>
+                <span class="no-items">No professional experience till date😭.</span>
         </section>
 
         <!-- Certificates container -->
-        <section class="container"></section>
+        <section class="container">
+                <h2>Certifications</h2>
+                <div class="wrapper">
+                        <div class="certificate">
+                                <a href="https://www.freecodecamp.org/certification/mukeshgurpude/responsive-web-design" target="_blank">Responsive Web Design</a>
+                                <span class="date"><time datetime="2020-09-28">September 28, 2020</time></span>
+                                <span class="where">freecodecamp</span>
+                        </div>
+                        <div class="certificate">
+                                <a href="https://www.freecodecamp.org/certification/mukeshgurpude/scientific-computing-with-python-v7" target="_blank">Scientific computing with python</a>
+                                <span class="date"><time datetime="2020-09-28">September 24, 2020</time></span>
+                                <span class="where">freecodecamp</span>
+                        </div>
+                        <div class="certificate">
+                                <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/NP4HVHL6TBT5" target="_blank">Python for Everybody</a>
+                                <span class="date"><time datetime="2020-09-28">May 23, 2020</time></span>
+                                <span class="where">Coursera</span>
+                        </div>
+                </div>
+                <span class="no-items">No Certificates earned😢</span>
+        </section>
 
         <!-- Projects Container -->
-        <section id="projects">
-                <header class="container"><h2>Projects</h2></header>
-                <div id="project_tag_holder">
-                        <button class="select_project_tag"></button>
-                        <button class="select_project_tag"></button>
-                        <button class="select_project_tag"></button>
-                </div>
-                <div id="project__holder">
+        <section class="container" id="projects" style="margin: 1em 0;;">
+                <header style="margin-bottom: 1em;">
+                        <h2>Projects<span id="num-projects"></span></h2>
+                        <div id="project_tag_holder">
+                                <button class="select_project_tag">HTML</button>
+                                <button class="select_project_tag">Javascript</button>
+                                <button class="select_project_tag">Django</button>
+                        </div>
+                </header>
+                <div class="wrapper d-flex">
                         <!-- Edie Homepage -->
-                        <div class="container project"></div>
-
-                        <!-- Image gallery -->
-                        <div class="container project"></div>
-
-                        <!-- Checkout Page -->
-                        <div class="container project"></div>
+                        <div class="container project d-flex">
+                              <div class="project_snap">
+                                      <img src="assets/images/edie_snapshot.png" alt="Edie homepage">
+                              </div>
+                              <div class="project_info">
+                                      <h3>Edie Homepage</h3>
+                                      <div class="project_tags">
+                                              <span class="tag tag-html">HTML</span>
+                                              <span class="tag tag-css">CSS</span>
+                                      </div>
+                                      <p>Homepage built as per the design provided by devchallenges</p>
+                                      <div>
+                                              <a href="https://devchallenges.io/solutions/XltvRZxzbKFkZ4rYWzsh" target="_blank">View</a>
+                                      </div>
+                              </div>
+                        </div>
+                        <!-- Interior consulting Page -->
+                        <div class="container project d-flex">
+                              <div class="project_snap">
+                                      <img src="assets/images/interior_snapshot.png" alt="Edie homepage">
+                              </div>
+                              <div class="project_info">
+                                      <h3>Interior consulting Landing Page</h3>
+                                      <div class="project_tags">
+                                              <span class="tag tag-html">HTML</span>
+                                              <span class="tag tag-css">CSS</span>
+                                      </div>
+                                      <p>Interior consultant landing page built as per the design provided by devchallenges</p>
+                                      <div>
+                                              <a href="https://devchallenges.io/solutions/lEVy8JOHX2TCTpSK6bJg" target="_blank">View</a>
+                                      </div>
+                              </div>
+                        </div>
+                        <!-- Interior consulting Page -->
+                        <div class="container project d-flex">
+                              <div class="project_snap">
+                                      <img src="assets/images/medstore_snapshot.png" alt="Edie homepage">
+                              </div>
+                              <div class="project_info">
+                                      <h3>Medstore</h3>
+                                      <div class="project_tags">
+                                              <span class="tag tag-html">HTML</span>
+                                              <span class="tag tag-django">Django</span>
+                                              <span class="tag tag-javascript">Javascript</span>
+                                      </div>
+                                      <p>Ecommerce medical store powered by Django</p>
+                                      <div>
+                                              <a href="https://medstore.pythonanywhere.com/medicines/" target="_blank">View</a>
+                                      </div>
+                              </div>
+                        </div>
                 </div>
+                <span class="no-items">No matching projects</span>
                 <div id="project__traverse">
                 </div>
         </section>
-
+        <footer class="container row">
+                <div class="row">
+                        <span>Contact me🤝</span>
+                        <div>
+                                <a class="social" href="https://twitter.com/mukeshgurpude"><img src="assets/icons/twitter.svg" alt=""></a>
+                                <a class="social" href="https://linkedin.com/mukeshgurpude"><img src="assets/icons/linkedin.svg" alt=""></a>
+                        </div>
+                </div>
+                <span class="row" style="color: rgba(100, 100, 150);font-size: .8em;">Mukesh Gurpude @ Devchallenges.io</span>
+        </footer>
 </body>
 </html>
