@@ -1,4 +1,4 @@
-<h1 align="center">Recipe Blog</h1>
+<h1 align="center">Edie Homepage</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -6,15 +6,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://mukeshgurpude.github.io/Responsive-DevChallenges/recipe-blog/">
+    <a href="https://mukeshgurpude.github.io/Responsive-DevChallenges/portfolio/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/mukeshgurpude./Responsive-DevChallenges/recipe-blog/">
+    <a href="https://github.com/mukeshgurpude/Responsive-DevChallenges/portfolio/">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht">
+    <a href="https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt">
       Challenge
     </a>
   </h3>
@@ -29,7 +29,7 @@
 
 ## Features
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt) was to build an application to complete the given user stories.
 
 ## Contact
 
