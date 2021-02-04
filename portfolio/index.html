@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
         <link rel="icon" href="../devchallenges.png">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-        <title>Devchallenges</title>
+        <title>Mukesh Gurpude | Portfolio</title>
         <!-- <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet"> -->
         <link href="portfolio.css" rel="stylesheet">
 </head>
@@ -82,14 +82,14 @@
                 <header style="margin-bottom: 1em;">
                         <h2>Projects<span id="num-projects"></span></h2>
                         <div id="project_tag_holder">
-                                <button class="select_project_tag">HTML</button>
-                                <button class="select_project_tag">Javascript</button>
-                                <button class="select_project_tag">Django</button>
+                                <button class="select_project_tag" data-tag="html">HTML</button>
+                                <button class="select_project_tag" data-tag="javascript">Javascript</button>
+                                <button class="select_project_tag" data-tag="django">Django</button>
                         </div>
                 </header>
                 <div class="wrapper d-flex">
                         <!-- Edie Homepage -->
-                        <div class="container project d-flex">
+                        <div class="container project d-flex show">
                               <div class="project_snap">
                                       <img src="assets/images/edie_snapshot.png" alt="Edie homepage">
                               </div>
@@ -106,7 +106,7 @@
                               </div>
                         </div>
                         <!-- Interior consulting Page -->
-                        <div class="container project d-flex">
+                        <div class="container project d-flex show">
                               <div class="project_snap">
                                       <img src="assets/images/interior_snapshot.png" alt="Edie homepage">
                               </div>
@@ -123,7 +123,7 @@
                               </div>
                         </div>
                         <!-- Interior consulting Page -->
-                        <div class="container project d-flex">
+                        <div class="container project d-flex show">
                               <div class="project_snap">
                                       <img src="assets/images/medstore_snapshot.png" alt="Edie homepage">
                               </div>
@@ -149,11 +149,41 @@
                 <div class="row">
                         <span>Contact me🤝</span>
                         <div>
-                                <a class="social" href="https://twitter.com/mukeshgurpude"><img src="assets/icons/twitter.svg" alt=""></a>
-                                <a class="social" href="https://linkedin.com/mukeshgurpude"><img src="assets/icons/linkedin.svg" alt=""></a>
+                                <a class="social" href="https://twitter.com/mukeshgurpude"><img src="assets/images/twitter.png" alt=""></a>
+                                <a class="social" href="https://linkedin.com/in/mukeshgurpude"><img src="assets/images/linkedin.png" alt=""></a>
+                                <a class="social" href="https://github.com/mukeshgurpude"><img src="assets/images/github.png" alt=""></a>
                         </div>
                 </div>
                 <span class="row" style="color: rgba(100, 100, 150);font-size: .8em;">Mukesh Gurpude @ Devchallenges.io</span>
         </footer>
+
+        <script>
+                const tags = document.querySelectorAll('.select_project_tag');
+                const projects = document.querySelectorAll('.project');
+                const noProjects = document.getElementById('projects').querySelector('.no-items');
+
+                function filterProjects(){
+                        const currentTag = document.querySelector('.select_project_tag.selected');
+                        currentTag && currentTag.classList.remove('selected');
+                        this.classList.add('selected');
+                        
+                        const keyword = this.dataset['tag'] || '';
+                        let numMatched = 0;
+                        projects.forEach(project=>{
+                                const has = project.querySelector(`.tag-${keyword}, .tag${keyword}`);
+                                if(has){
+                                        project.classList.add('show');
+                                        numMatched++; 
+                                }else{
+                                        project.classList.remove('show');
+                                }
+
+                        })
+
+                }
+
+                tags.forEach(tag=>tag.addEventListener('click', filterProjects));
+
+        </script>
 </body>
 </html>

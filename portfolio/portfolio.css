@@ -1,10 +1,11 @@
 *, *::after, *::before{
         box-sizing: border-box;
+        transition: color .1s, transform .5s;
 }
 :root{
     --container-padding: 16px;
     --project-tag-color: hsl(216, 64%, 42%);
-    --oppose-color: rgb(22, 31, 65);
+    --oppose-color: rgba(79, 74, 104, 0.8);
 }
 html{scroll-behavior: smooth;}
 body{
@@ -75,26 +76,31 @@ img{width: 100%;
     color: var(--project-tag-color);
 }
 .project_snap{width: 300px;height: 200px;overflow: hidden;}
-.project{width: 350px;align-items: center;box-shadow: 0 0 10px 1px rgba(100, 100, 100, .8);}
+.project{width: 350px;align-items: center;box-shadow: 0 0 10px 1px rgba(100, 100, 100, .8);opacity: 1;transition: all .3s, opacity .2s ease .2s;}
 #projects>.wrapper{
     flex-flow: wrap row;
     gap: 1em;
     justify-content: center;
 }
+.project:not(.show),.project:not(.show) > *{width: 0;height: 0;padding: 0 !important;overflow: hidden;opacity: 0;}
+.project:not(:hover){box-shadow: none;}
 .row{
     width: 100%;
     border-radius: 0;
     text-align: center;
 }
-.social>img{
-    width: calc(1.5 * var(--container-padding));
-    height: calc(1.5 * var(--container-padding));
-    background-color: var(--oppose-color);
+.social>*{
+    width: calc(2 * var(--container-padding));
+    height: calc(2 * var(--container-padding));
+    margin-left: 5px;
+}
+.social:hover>*{
+    transform: rotateZ(10deg) translateX(-5px);
 }
 .tag{
     font-size: .8em;
     font-family: cursive, Verdana, Geneva, Tahoma, sans-serif;
-    color: blue;
+    color: var(--project-tag-color);
 }
 .tag::before{
     content: '| ';
@@ -104,7 +110,7 @@ img{width: 100%;
 #project__traverse:empty{display: none;}
 .project a{
     border: 2px solid var(--project-tag-color);
-    padding: .4em .8em;
+    padding: .15em .5em;
     border-radius: 1em;
     color: var(--project-tag-color);
 }
@@ -112,4 +118,22 @@ img{width: 100%;
     background-color: var(--oppose-color);
     color: #fff;
     border: none;
+}
+
+@media screen and (min-width: 568px){
+    body{
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-around;
+        align-items: stretch;
+        gap: 1em;
+    }
+    .container{margin: .5em 0;}
+    #projects>.wrapper{margin: auto;}
+    body>*{flex: 1 0 300px;}
+    footer{flex-basis: 100% !important;}
+}
+@media screen and (min-width: 872px){
+    #projects>.wrapper{justify-content: initial;}
+    body>*{flex-basis: 400px;}
 }
